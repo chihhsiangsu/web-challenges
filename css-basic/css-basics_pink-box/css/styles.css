@@ -9,9 +9,16 @@ body {
 }
 
 /* Put a selector here to select div elements (see index.html). */
-SELECTOR HERE {
+div {
+  height: 150px;
+  width: 200px;
   font-family: cursive;
   padding: 8px;
+  background-color: hotpink;
+  text-decoration-color: white;
+  font-size: 40px;
+  border-radius: 8px;
+  text-align: center;
 
   /* Set the height and the width of the box to 150px. */
 
