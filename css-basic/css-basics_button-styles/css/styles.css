@@ -31,6 +31,15 @@ button {
 Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
+  font-family: fantasy;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: magenta;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
   /* Style me! Change my border, set a border radius or try out other styles. :) */
 }
 
