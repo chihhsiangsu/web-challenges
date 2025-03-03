@@ -34,7 +34,6 @@ main {
  * @example
  * .box--top-left -> This element should be placed in the top-left corner.
  */
-
 body {
   position: relative;
 }
@@ -58,7 +57,7 @@ body {
 }
 
 .box--bottom-right {
-  background-color: #1b4f72;
+  background-color: #15486a;
   position: absolute;
   right: 0px;
   bottom: 0px;
