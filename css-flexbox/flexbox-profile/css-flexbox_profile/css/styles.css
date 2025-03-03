@@ -13,6 +13,15 @@ h2 {
   color: #3f0097;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-stack__list {
+  display: flex;
+}
+
 .main__title {
   padding: 10px;
   background: #fddcd2;
@@ -25,11 +34,14 @@ h2 {
   aspect-ratio: 1 / 1;
   border: solid #3f0097 1px;
   max-width: 50%;
+  margin: auto;
 }
 
 .tech-stack__list {
   list-style: none;
   padding-left: 0;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .tech-stack__list-item {
