@@ -13,22 +13,41 @@
 }
 
 .park {
+  font-size: 32px;
   margin: 16px;
   border: 2px dashed silver;
   overflow: hidden;
   border-radius: 8px;
   background-color: lightgoldenrodyellow;
+  padding: 16px;
 }
 
-.animal {
-  padding: 16px;
+.animal_giraffe {
+  text-align: center;
+}
+.animal_giraffe:hover {
+  background-color: lightgreen;
+}
 
-  /*
+.animal_dino {
+  text-align: right;
+}
+.animal_dino:hover {
+  background-color: lightsalmon;
+}
+
+.animal_crocodile {
+  text-align: left;
+}
+.animal_crocodile:hover {
+  background-color: lightblue;
+}
+
+/*
     The animals are very small.
     The size of the emojis is controlled via the font size.
     Set the font size to 32px.
   */
-}
 
 /*
   The giraffe is afraid of the crocodile and the dino.
