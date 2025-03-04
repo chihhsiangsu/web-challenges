@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--header-bg);
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+.footer-button {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: pink;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
