@@ -11,12 +11,27 @@ console.clear();
 
 // --v-- write your code here --v--
 
+let title = "March Pupup!";
+let content = "Next Pop up is coming on next week";
+let popular = "Likes:";
+let numberOfLikes = 250;
+const accountUser = "SuSu";
+let isReported = true;
+
 // --^-- write your code here --^--
 
 /*
-2. Log all variables to the console. Then increase the number of likes by one and log the updated like count. Modify your code from step 1 if necessary.
+2. Log all variables to the console. 
+Then increase the number of likes by one and log the updated like count. 
+Modify your code from step 1 if necessary.
 */
 
 // --v-- write your code here --v--
+
+console.log(title);
+console.log(content);
+console.log(popular, numberOfLikes);
+console.log(accountUser);
+console.log(isReported);
 
 // --^-- write your code here --^--
