@@ -1,5 +1,20 @@
 console.clear();
 
+const textStart = "Start Balance";
+const startingBalance = 1000;
+const textMonthlyContribution = "Monthly Contribution";
+const monthlyContribution = 200;
+const months = 12;
+const totalSavings = startingBalance + monthlyContribution * months;
+const textSavingafterAYear = "Saving After A Year";
+
+console.log(textStart);
+console.log(startingBalance);
+console.log(textMonthlyContribution);
+console.log(monthlyContribution);
+console.log(textSavingafterAYear);
+console.log(totalSavings);
+
 /*
 Let's build a small program to track your savings goals!
 
