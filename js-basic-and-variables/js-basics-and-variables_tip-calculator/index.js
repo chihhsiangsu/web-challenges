@@ -1,5 +1,17 @@
 console.clear();
 
+const textMealCost = "Meal Cost";
+const mealCost = 50;
+const tipPercentage = 0.1;
+const textTipAmount = "Tip Amount";
+const tipAmount = mealCost * tipPercentage;
+const textTotalCost = "Total Cost";
+const totalCost = mealCost + tipAmount;
+
+console.log(textMealCost, mealCost);
+console.log(textTipAmount, tipAmount);
+console.log(textTotalCost, totalCost);
+
 /*
 Create a program that calculates the total cost of a meal, including tip, 
 based on the cost of the meal and the percentage of the tip.
