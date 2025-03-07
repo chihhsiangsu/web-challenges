@@ -34,4 +34,7 @@ console.log(popular, numberOfLikes);
 console.log(accountUser);
 console.log(isReported);
 
+numberOfLikes = numberOfLikes + 100;
+console.log(popular, numberOfLikes);
+
 // --^-- write your code here --^--
