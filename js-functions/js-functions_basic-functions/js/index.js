@@ -67,7 +67,7 @@ function logBookData() {
 logBookData();
 
 numberOfCopiesSold += 10000;
-numberOfCopiesSold += 10000;
+numberOfCopiesSold += 20000;
 
 logBookData();
 
