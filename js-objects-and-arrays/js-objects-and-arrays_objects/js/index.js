@@ -13,8 +13,8 @@ const personWithNameAgeEmail = {
 // Set the values of `nameOfAlex` and `ageOfAlex` to match the corresponding values in the `personAlex` object.
 
 const personAlex = {
-  name: "Alex",
-  age: 14,
+  nameOfAlex: personWithNameAgeEmail.name,
+  em: 14,
 };
 
 const nameOfAlex = "Change me";
