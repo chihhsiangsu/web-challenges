@@ -43,9 +43,8 @@ const switchValueButton = document.querySelector(
 
 // --v-- Write your code here --v--
 switchValueButton.addEventListener("click", () => {
-  [firstSwitchValueInput.value, secondSwitchValueInput.value] = [
-    secondSwitchValueInput.value,
-    firstSwitchValueInput.value,
-  ];
+  const holder = firstSwitchValueInput.value;
+  firstSwitchValueInput.value = secondSwitchValueInput.value;
+  secondSwitchValueInput.valiue = holder;
 });
 // --^-- End of Task 3 --^--
