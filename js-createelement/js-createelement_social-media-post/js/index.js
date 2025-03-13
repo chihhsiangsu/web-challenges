@@ -33,7 +33,7 @@ buttonElement.type = "button";
 buttonElement.addEventListener("click", (event) => {
   buttonElement.classList.toggle("post__button--liked");
 });
-
+//7. Append everything
 articleElement.append(pElement, footerElement);
 footerElement.append(spanElement, buttonElement);
 container.append(articleElement);
