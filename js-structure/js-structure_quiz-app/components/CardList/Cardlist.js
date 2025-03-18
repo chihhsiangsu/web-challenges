@@ -1,5 +1,5 @@
-import { cards } from "../Card/card.js";
-import { Card } from "../Form/Form.js";
+import { cards } from "../../data.js";
+import { Card } from "./components/Card/card";
 
 export function CardList() {
   const cardList = document.createElement("section");
