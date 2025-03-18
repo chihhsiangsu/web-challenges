@@ -1,6 +1,6 @@
-import { Header } from "./components/Header/Header.js";
-import { Form } from "./components/Form/Form.js";
-import { CardList } from "./components/CardList/Cardlist.js";
+import { CardList } from "../CardList/Cardlist.js";
+import { Form } from "../Form/Form.js";
+import { Header } from "../Header/Header.js";
 
 export function App() {
   const app = document.createElement("main");
