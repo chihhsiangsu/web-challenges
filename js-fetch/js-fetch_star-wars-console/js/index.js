@@ -8,15 +8,11 @@ async function fetchData() {
 
   const data = await response.json();
   //console.log(data.results);
-  return data.results;
-}
-async function findR2d2Eyecolor() {
-  const allData = await fetchData();
-  const r2d2 = allData.find((feacher) => feacher.name === "R2-D2");
+  const allData = data.results;
+  const r2d2 = allData.find((element) => element.name === "R2-D2");
   if (r2d2) {
     console.log(r2d2.eye_color);
   }
 }
 
-findR2d2Eyecolor();
 fetchData();
