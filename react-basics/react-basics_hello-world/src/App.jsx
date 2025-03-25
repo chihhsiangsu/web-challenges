@@ -1,7 +1,7 @@
 import "./styles.css";
 
 export default function App() {
-  return <HelloWorld>Hello world!</HelloWorld>;
+  return <HelloWorld />;
 }
 
 function HelloWorld() {
