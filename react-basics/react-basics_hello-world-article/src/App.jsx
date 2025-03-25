@@ -1,5 +1,14 @@
 import "./styles.css";
 
 export default function App() {
-  return <div>Replace me with your Component!</div>;
+  return <HelloWorldArticle></HelloWorldArticle>;
+}
+
+function HelloWorldArticle() {
+  return (
+    <article>
+      <h1>Hello world Program</h1>
+      <p>Hello world</p>
+    </article>
+  );
 }
