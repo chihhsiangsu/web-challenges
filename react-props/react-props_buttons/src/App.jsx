@@ -2,6 +2,7 @@ export default function App() {
   function handleClick() {
     console.log("clicked");
   }
+
   return (
     <div>
       <Button
@@ -26,7 +27,8 @@ function Button({ textcolor, disabled, text, printClick, color }) {
     <button
       disabled={disabled}
       style={{ color: textcolor, backgroundColor: color }}
-      onClick={() => printClick()}
+      //onClick={() => printClick()}
+      onClick={printClick}
     >
       {disabled ? "Disabled" : text}
     </button>
