@@ -26,21 +26,29 @@ console.log(maxOfTwoNumbers(100, 50));
 const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
 
 function findLongestWord(words) {
-  const longestWordComeFirst = words.toSorted(function (a, b) {
-    return b.length - a.length;
-  });
+  const longestWordComeFirst = words.toSorted((a, b) => b.length - a.length);
   const theLongestWord = longestWordComeFirst[0];
   return theLongestWord;
 }
 console.log(findLongestWord(words));
 
 // Calculate the sum
+// TODO:
+/*
+1. I will try to use Array methond 'reduce' to solve this task
+2. The first element in the array will add with the second element and the sum will 
+become the first element in the arry to add with the next element.
+3. In the end, there is only one number in the array and we can return this number.
+*/
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbers) {
-  // TODO:
+  const sum = numbers.reduce((a, b) => a + b);
+  return sum;
 }
+
+console.log(sumNumbers(numbers));
 
 // Calculate the average length of the words
 
