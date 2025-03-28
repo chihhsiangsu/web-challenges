@@ -103,6 +103,7 @@ const wordsFind = [
 
 function doesWordExist(haystack, needle) {
   // TODO:
+  1;
 }
 
 // Count repetition
