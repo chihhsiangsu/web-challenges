@@ -7,14 +7,17 @@ import { USERS } from "./db";
 export default function App() {
   return (
     <main className="app">
-      {USERS.map((user) => (
-        <Fragment>
-          <Title text="ClientBoard" />
-          <div className="app__card-grid">
-            <Card user={USERS[0]} />
-          </div>
-        </Fragment>
-      ))}
+      <Title text="ClientBoard" />
+      <div className="app__card-grid">
+        {USERS.map((user) => (
+          <Card
+            key={user.id}
+            name={user.name}
+            roles={user.roles}
+            about={user.about}
+          />
+        ))}
+      </div>
     </main>
   );
 }
