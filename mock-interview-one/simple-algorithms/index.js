@@ -65,8 +65,14 @@ const words2 = [
   "mystique",
 ];
 
-function averageWordLength(words) {
+function averageWordLength(words2) {
   // TODO:
+  //1. use array method map to convert the elements in the array to their length and create a new array.
+  const newArrayWithLength = words2.map((word) => {
+    return word.length;
+  });
+  console.log(newArrayWithLength);
+  //2. use array method reduse
 }
 
 // Unique arrays - return an array without duplicates
