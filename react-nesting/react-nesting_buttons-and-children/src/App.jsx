@@ -1,21 +1,14 @@
 import React from "react";
 import "./styles.css";
+import { Button } from "../Component/Button.jsx";
 
 export default function App() {
   return (
     <main>
-      <Button />
-      <Button />
-      <Button />
-      <Button />
+      <Button>Hi</Button>
+      <Button>We</Button>
+      <Button>are the</Button>
+      <Button>Chirdren</Button>
     </main>
-  );
-}
-
-function Button() {
-  return (
-    <button className="button" type="button">
-      Click me!
-    </button>
   );
 }
