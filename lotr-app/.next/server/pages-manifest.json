@@ -1,0 +1,8 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/volumes/TheReturnOfTheKing": "pages/volumes/TheReturnOfTheKing.js",
+  "/volumes": "pages/volumes.js",
+  "/volumes/TheFellowshipOfTheRing": "pages/volumes/TheFellowshipOfTheRing.js"
+}
