@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { introduction } from "@/resources/lib/data";
+import { volumes } from "@/resources/lib/data";
 
 export default function Volumes() {
   return (
@@ -10,19 +11,13 @@ export default function Volumes() {
         <li>
           <Link href="/volumes">All Volumes</Link>
         </li>
-        <li>
-          <Link href="/volumes/TheFellowshipOfTheRing">
-            Volume1: The Fellowship of The Ring
-          </Link>
-        </li>
-        <li>
-          <Link href="/volumes/TheTwoTowers">Volume2: The Two Towers</Link>
-        </li>
-        <li>
-          <Link href="/volumes/TheReturnOfTheKing">
-            Volume3: The Return of The King
-          </Link>
-        </li>
+        {volumes.map(({ title }, index) => (
+          <li key={index}>
+            <Link href="/volumes/TheFellowshipOfTheRing">
+              Volume{index + 1}: {title}
+            </Link>
+          </li>
+        ))}
       </ul>
     </>
   );
