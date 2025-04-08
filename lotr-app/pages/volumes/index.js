@@ -11,9 +11,9 @@ export default function Volumes() {
         <li>
           <Link href="/volumes">All Volumes</Link>
         </li>
-        {volumes.map(({ title }, index) => (
+        {volumes.map(({ title, slug }, index) => (
           <li key={index}>
-            <Link href="/volumes/TheFellowshipOfTheRing">
+            <Link href={`/volumes/${slug}`}>
               Volume{index + 1}: {title}
             </Link>
           </li>
