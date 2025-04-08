@@ -3,8 +3,12 @@ import Link from "next/link";
 export default function Volumes() {
   return (
     <>
-      <h1>Volumes Overview</h1>
+      <h1>Lord of the Rings</h1>
+      <p></p>
       <ul>
+        <li>
+          <Link href="/volumes">All Volumes</Link>
+        </li>
         <li>
           <Link href="/volumes/TheFellowshipOfTheRing">
             Volume1: The Fellowship of The Ring
