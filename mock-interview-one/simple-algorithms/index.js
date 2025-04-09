@@ -163,9 +163,7 @@ const wordsCount = [
 ];
 
 function howManyTimes(haystack, needle) {
-  const newArray = haystack.filter((element) => {
-    return element === needle;
-  });
+  const newArray = haystack.filter((element) => element === needle);
   return newArray.length;
 }
 
