@@ -116,6 +116,7 @@ console.log(uniquifyArray(words3));
 //2. we pass two arguments array and targetElelment to the includes function.
 //3. if the provided array includes the targetElement, the doesWordExist returns a string showing the target element is in the array.
 //4. if not, the the doesWordExist returns `not found`.
+//5. we can test the function by passing the wordsFind and "matter" to the doesWordExist function
 
 const wordsFind = [
   "machine",
@@ -140,6 +141,12 @@ console.log(doesWordExist(wordsFind, "matter"));
 // Count repetition
 
 // TODO:
+//1. we can use an array method filter to solve this task
+//2. first we pass to argumants haystack and needle as provided to the call back function
+//3. in the fuction, we filter all element in the haystack with the argument needle
+//4. it returns a new array which only contains the element euqual to needle
+//5. in the end, let the function return the length of the new array
+//6. we can tset the function with the arguments wordsCount and "matter"
 
 const wordsCount = [
   "machine",
@@ -155,7 +162,14 @@ const wordsCount = [
   "matter",
 ];
 
-function howManyTimes(haystack, needle) {}
+function howManyTimes(haystack, needle) {
+  const newArray = haystack.filter((element) => {
+    return element === needle;
+  });
+  return newArray.length;
+}
+
+console.log(howManyTimes(wordsCount, "matter"));
 
 // Bonus: A generic sum function
 // for strings use the length of the string, for booleans use 1 and 0
