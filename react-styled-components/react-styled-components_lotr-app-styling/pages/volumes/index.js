@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { introduction, volumes } from "../../lib/data";
+import { StyledTilte } from "@/Component/StyledTitle";
 
 export default function Volumes() {
   return (
     <>
-      <h1>The Lord of the Rings</h1>
+      <StyledTilte>The Lord of the Rings</StyledTilte>
       <p>{introduction}</p>
+      <StyledTilte>All Volumes</StyledTilte>
       <ul>
         {volumes.map((volume) => (
           <li key={volume.id}>
