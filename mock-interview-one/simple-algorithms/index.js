@@ -33,6 +33,7 @@ function findLongestWord(words) {
 console.log(findLongestWord(words));
 
 // Calculate the sum
+
 // TODO:
 /*
 1. I will try to use Array methond 'reduce' to solve this task
@@ -52,6 +53,11 @@ console.log(sumNumbers(numbers));
 
 // Calculate the average length of the words
 
+// TODO:
+//1. use array method map to convert the elements in the array to their length and create a new array.
+//2. use array method reduse to make the number add to each other, then return a total word length
+//3. let totalWordLength devide by the length of word2 array
+
 const words2 = [
   "eclipse",
   "harmony",
@@ -66,16 +72,23 @@ const words2 = [
 ];
 
 function averageWordLength(words2) {
-  // TODO:
-  //1. use array method map to convert the elements in the array to their length and create a new array.
   const newArrayWithLength = words2.map((word) => {
     return word.length;
   });
-  console.log(newArrayWithLength);
-  //2. use array method reduse
+  const totalWordLength = newArrayWithLength.reduce((a, b) => a + b);
+  const averageWordLength = totalWordLength / words2.length;
+  return averageWordLength;
 }
 
+console.log(averageWordLength(words2));
+
 // Unique arrays - return an array without duplicates
+
+// TODO:
+//1. I would like use the array method filter to solve this task
+//2. The callback function we pass to .filter() takes two arguments: the element itself and its index in the array.
+//3. Inside the function, we check if the current element’s index is equal to the index of its first appearance in the array, using .indexOf().
+//4. If this is true, the element is unique so far, and it stays in the filtered array. Otherwise, it’s a duplicate and gets removed.
 
 const words3 = [
   "crab",
@@ -91,11 +104,19 @@ const words3 = [
   "bring",
 ];
 
-function uniquifyArray(words) {
-  // TODO:
+function uniquifyArray(words3) {
+  return words3.filter((value, index) => words3.indexOf(value) === index);
 }
+console.log(uniquifyArray(words3));
 
 // Find elements
+
+// TODO:
+//1. we can use an array methods called includes to check if the target element is in the wordsFind array.
+//2. we pass two arguments array and targetElelment to the includes function.
+//3. if the provided array includes the targetElement, the doesWordExist returns a string showing the target element is in the array.
+//4. if not, the the doesWordExist returns `not found`.
+
 const wordsFind = [
   "machine",
   "subset",
@@ -107,12 +128,18 @@ const wordsFind = [
   "disobedience",
 ];
 
-function doesWordExist(haystack, needle) {
-  // TODO:
-  1;
+function doesWordExist(array, targetElement) {
+  if (array.includes(targetElement)) {
+    return `${targetElement}is in the array`;
+  } else {
+    return `not found`;
+  }
 }
+console.log(doesWordExist(wordsFind, "matter"));
 
 // Count repetition
+
+// TODO:
 
 const wordsCount = [
   "machine",
@@ -128,9 +155,7 @@ const wordsCount = [
   "matter",
 ];
 
-function howManyTimes(haystack, needle) {
-  // TODO:
-}
+function howManyTimes(haystack, needle) {}
 
 // Bonus: A generic sum function
 // for strings use the length of the string, for booleans use 1 and 0
