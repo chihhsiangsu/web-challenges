@@ -25,8 +25,8 @@ console.log(maxOfTwoNumbers(100, 50));
 
 const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
 
-function findLongestWord(words) {
-  const longestWordComeFirst = words.toSorted((a, b) => b.length - a.length);
+function findLongestWord(array) {
+  const longestWordComeFirst = array.toSorted((a, b) => b.length - a.length);
   const theLongestWord = longestWordComeFirst[0];
   return theLongestWord;
 }
@@ -44,8 +44,8 @@ become the first element in the arry to add with the next element.
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers(numbers) {
-  const sum = numbers.reduce((a, b) => a + b);
+function sumNumbers(array) {
+  const sum = array.reduce((a, b) => a + b);
   return sum;
 }
 
@@ -71,8 +71,8 @@ const words2 = [
   "mystique",
 ];
 
-function averageWordLength(words2) {
-  const newArrayWithLength = words2.map((word) => {
+function averageWordLength(array) {
+  const newArrayWithLength = array.map((word) => {
     return word.length;
   });
   const totalWordLength = newArrayWithLength.reduce((a, b) => a + b);
@@ -104,8 +104,8 @@ const words3 = [
   "bring",
 ];
 
-function uniquifyArray(words3) {
-  return words3.filter((value, index) => words3.indexOf(value) === index);
+function uniquifyArray(array) {
+  return array.filter((value, index) => array.indexOf(value) === index);
 }
 console.log(uniquifyArray(words3));
 
