@@ -71,8 +71,8 @@ const words2 = [
   "mystique",
 ];
 
-function averageWordLength(array) {
-  const newArrayWithLength = array.map((word) => {
+function averageWordLength(word2) {
+  const newArrayWithLength = word2.map((word) => {
     return word.length;
   });
   const totalWordLength = newArrayWithLength.reduce((a, b) => a + b);
@@ -105,7 +105,7 @@ const words3 = [
 ];
 
 function uniquifyArray(array) {
-  return array.filter((value, index) => array.indexOf(value) === index);
+  return array.filter((element, index) => array.indexOf(element) === index);
 }
 console.log(uniquifyArray(words3));
 
