@@ -9,8 +9,7 @@ jest.mock("next/router", () => ({
 }));
 
 test("renders two input fields and a button", () => {
-  const onCreateGame = jest.fn();
-  render(<GameForm onCreateGame={onCreateGame} />);
+  render(<GameForm />);
   const nameOfGame = screen.getByLabelText(/Create a new game/i);
   const namesOfPlaters = screen.getByLabelText(
     /Player names, separated by comma/i
@@ -23,8 +22,7 @@ test("renders two input fields and a button", () => {
 });
 
 test("renders a form with the accessible name 'Create a new game'", () => {
-  const onCreateGame = jest.fn();
-  render(<GameForm onCreateGame={onCreateGame} />);
+  render(<GameForm />);
   const form = screen.getByRole("form", { name: /Create a new game/i });
 
   expect(form).toBeInTheDocument();
@@ -36,7 +34,7 @@ test("submits the correct form data when every field is filled out", async () =>
 
   const user = userEvent.setup();
 
-  const nameOfGameInput = screen.getByLabelText(/Create a new game/i);
+  const nameOfGameInput = screen.getByLabelText(/Name of game/i);
   await user.type(nameOfGameInput, "Name of Game");
   const nameOfPlayersInput = screen.getByLabelText(
     /Player names, separated by comma/i
@@ -47,7 +45,10 @@ test("submits the correct form data when every field is filled out", async () =>
   });
   await user.click(createButton);
 
-  const nameOfGame = screen.getByRole("heading", { name: "Name of Game" });
+  expect(onCreateGame).toHaveBeenCalledWith({
+    nameOfGame: "Name of Game",
+    playerNames: ["Susu"],
+  });
 });
 
-test("does not submit form if one input field is left empty", async () => {});
+test("does not submit form if one inpwut field is left empty", async () => {});
