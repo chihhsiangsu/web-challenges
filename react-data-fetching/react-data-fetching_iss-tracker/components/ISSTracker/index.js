@@ -28,7 +28,7 @@ export default function ISSTracker() {
   });
 
   if (error) return <div>{error.message}</div>;
-  if (isLoading) return <div>loading...</div>;
+  if (isLoading) return <div>loading.....</div>;
 
   /*
   const [coords, setCoords] = useState({
