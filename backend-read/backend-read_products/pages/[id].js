@@ -25,6 +25,7 @@ export default function Product() {
         Price: {data.price} {data.currency}
       </p>
       <StyledLink href="/">Back to all</StyledLink>
+      <p>{data.reviews.map((review) => review.text)}</p>
     </ProductCard>
   );
 }
